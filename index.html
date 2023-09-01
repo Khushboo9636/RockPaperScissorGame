@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock, Paper, Scisors </title>
+    <link rel="stylesheet" href="./style.css" class="rel">
+ </head>
+ <body class="preload">
+     <div class="container">
+        <header class="header">
+            <div class="title_img" style="padding-right: 100px;">
+           <div class="r1"><img src ="./image/ROCK.png" alt="logo" class="logo"/></div> 
+           <div class="r2"> <img src="./image/PAPER.png" alt="logo" class="logo"/></div> 
+           <div class="r3"> <img src="./image/SCISSORS.png" alt="logo" class="logo"/></div> 
+        </div>
+            <div class="cmp_score">
+                <div class="score_title1">COMPUTER</div>
+                <div class="score_title1">SCORE</div>
+                <div class="score_number1">0</div>
+            </div>
+            <div class="my_score">
+                <div class="my_title">YOUR</div>
+                <div class="my_title">SCORE</div>
+                <div class="score_number2">0</div>
+            </div>
+        </header>
+           <div class="lines container" style="position: relative; z-index: 1; display: flex; padding: 0px;">
+            <div class="line1" style="width: 0; "></div>
+            <div class="line2"  style="width: 0;"></div>
+            <div class=" line3"  style="width: 0;"></div>
+           </div>
+        <section class="game">
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="./image/icon-rock.png" alt = "rock" style="background-color: #fff;" >
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="scissors" >
+                <div class="choice scissors" >
+                    <img src="./image/icon-scissors.png" alt = "scissors"  style="background-color: #fff;" >
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper"  >
+                    <img src="./image/icon-paper.png" alt = "paper"  style="background-color: #fff;">
+                </div>
+            </button>
+            
+           
+        </section>
+     </div>
+     <section class="results hidden">
+        <h2 class="results_heading">YOU PICKED</h2>
+        <h2 class="results_heading">PC PICKED</h2>
+        <div class="results_result" ></div>
+        <div class="results_winner hidden">
+            <h3 class="results_text"> </h3>
+            <button class="play-again">play again</button>
+        </div>
+        <div class="results_result"></div>
+        
+     </section>
+    <div class="rulegame container2" id="popup">
+    
+        <div class="chart">
+            <div class="cancel" id="close">
+                <button class="x"  style="border: 1px white solid;  border-radius: 9999px; background-color: red;">X</button>
+            </div>
+            <div class="rulesContainer" >    
+                <div class="GameRules">Game Rules</div>
+                <div class="Rect1"></div>
+                <div class="Rect2"></div>
+                <div class="point1" > Rock beats scissors, scissors beat paper, and paper beats rock.</div>
+                <div class="point2" >Agree ahead of time whether you will count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div>
+                <div class="Rect3" ></div>
+                <div class="Rect4" ></div>
+                <div class="point3" >Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div>
+                <div class="point4" >If both players lay down the same hand, each player lays down another hand</div>
+            </div>
+        </div>
+    </div>
+    <button class="rules-btn" id="ruleButton">RULES</button>
+    <button class="next-btn" id="nextButton" > <a href = "nextWinner.html"> NEXT </a></button>
+    
+<script src="./script.js"></script>
+
+
+
+ </body>
+ </html>
